@@ -408,7 +408,7 @@ public class ChatActivity extends AppCompatActivity {
                             public Map<String, String> getHeaders() throws AuthFailureError {
                                 Map<String , String > headers = new HashMap<>();
                                 headers.put("Content-Type", "application/json");
-                                headers.put("Authorization", "key=AAAApTgiLCg:APA91bG2bH_JfnwO3dOgdt-m7tbqduOJTo7O0lMgP5J4cJHSOF5UsTBTRkyDF6O0gNW5hiVAr6xwVvENVBEKyVtqQ0vJVuJRElzFbr3UE44JgN4KqK6Qd52qPmsgTY5tXLUMZrUakFu7");
+                                headers.put("Authorization", ); //put the token
                                 return headers;
                             }
                         };
