@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="5dp"
+    app:contentPadding="5dp"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="#FDFAF6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:id="@+id/profile_layout">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/profilePic_cardView"
+                app:cardCornerRadius="40dp"
+                android:layout_marginHorizontal="9dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/profile_pic_IV"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_profile_default"/>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/uName_Tv"
+                    android:text="@string/name"
+                    android:textColor="#064420"
+                    android:textSize="19sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/uTime_Tv"
+                    android:textColor="#064420"
+                    android:alpha="0.5"
+                    android:text="@string/_27_min"/>
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/more_option_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:src="@drawable/ic_more" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recipeName_TV"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="@string/recipe_name"
+            android:layout_marginHorizontal="9dp"
+            android:textColor="#064420"
+            android:autoLink="all"
+            android:paddingBottom="3dp"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#064420"
+            android:text="@string/recipe_ingredients"
+            android:autoLink="all"
+            android:layout_marginHorizontal="9dp"
+            android:id="@+id/ingredients_TV"
+            android:paddingBottom="7dp"
+            android:layout_marginBottom="3dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="9dp"
+            android:text="@string/recipe_instructions"
+            android:autoLink="all"
+            android:textColor="#064420"
+            android:id="@+id/instructions_TV"
+            android:layout_marginBottom="3dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/recipe_iv"
+            android:scaleType="fitXY"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/likes_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_331_likes"
+                android:layout_marginHorizontal="9dp"
+                android:gravity="start"
+                android:textColor="#064420"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/comments_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_22_comments"
+                android:layout_marginHorizontal="11dp"
+                android:textColor="#064420"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:gravity="end"/>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="3dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/like_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="6dp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/like_icon"
+                android:drawablePadding="3dp"
+                android:padding="5dp"
+                android:backgroundTint="#E4EFE7"
+                android:text="@string/like"
+                android:textColor="#064420" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="6dp"
+                android:text="@string/comment"
+                android:padding="5dp"
+                android:textColor="#064420"
+                android:backgroundTint="#E4EFE7"
+                android:drawableStart="@drawable/comment_icon"
+                android:drawablePadding="3dp"
+                android:id="@+id/comment_btn"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

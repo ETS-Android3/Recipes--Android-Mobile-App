@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:contentPadding="6dp"
+    app:cardCornerRadius="25dp"
+    app:cardBackgroundColor="#FDFAF6">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/profilePic_cardView"
+            app:cardCornerRadius="40dp"
+            android:layout_marginEnd="5dp"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:id="@+id/profile_pic_IV"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_profile_default"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear_layout"
+            android:layout_toEndOf="@id/profilePic_cardView">
+
+            <TextView
+                android:id="@+id/name_TV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/user_name"
+                android:textColor="#064420"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/time_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="7dp"
+                android:text="@string/_10_10_2021"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/comment_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_layout"
+            android:textColor="#064420"
+            android:alpha="0.7"
+            android:layout_toEndOf="@id/profilePic_cardView"
+            android:text="@string/the_comment" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.RegisterActivity"
+    android:padding="20dp"
+    android:background="#FAF1E6">
+
+    <TextView
+        android:id="@+id/register_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/registration"
+        android:textAlignment="center"
+        android:textColor="#064420"
+        android:textSize="35sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_tv"
+        android:textColor="#064420"
+        android:text="@string/appDescription"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/images1_iv"
+        android:layout_width="270dp"
+        android:layout_height="170dp"
+        android:layout_below="@id/register_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/creme" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColorHint="#064420"
+        android:id="@+id/name_register_til">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:textColor="#064420"
+            android:background="#FDFAF6"
+            android:inputType="textCapWords"
+            android:id="@+id/registerName_et"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#064420"
+        android:layout_below="@+id/name_register_til"
+        android:id="@+id/email_til">
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:textColor="#064420"
+        android:background="#FDFAF6"
+        android:id="@+id/registerEmail_et"
+        android:inputType="textEmailAddress"
+        android:layout_marginVertical="10dp"
+        android:layout_centerInParent="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColorHint="#064420"
+        android:layout_below="@id/email_til"
+        android:id="@+id/password_til"
+        app:endIconMode="password_toggle">
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:textColor="#064420"
+        android:background="#FDFAF6"
+        android:id="@+id/registerPassword_et"
+        android:inputType="textPassword"
+        android:layout_below="@id/registerEmail_et"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_til"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="#E4EFE7"
+        android:text="@string/register"
+        android:textColor="#064420"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/login_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_btn"
+        android:padding="25dp"
+        android:text="@string/already_have_an_account_press_here"
+        android:textAlignment="center"
+        android:textColor="#064420"
+        android:textSize="16sp" />
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="3dp"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="2dp"
+    android:backgroundTint="#FDFAF6"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="7dp"
+            app:cardCornerRadius="40dp"
+            android:id="@+id/profilePic_chat_cardView">
+
+            <ImageView
+                android:layout_height="70dp"
+                android:layout_width="match_parent"
+                android:id="@+id/profile_pic_chat_IV"
+                android:scaleType="centerCrop"
+                android:background="#E4EFE7"
+                android:src="@drawable/ic_profile_default"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:cardCornerRadius="40dp"
+            android:id="@+id/status_cardView">
+            <ImageView
+                android:layout_height="20dp"
+                android:layout_width="match_parent"
+                android:id="@+id/status_IV" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/name_chat_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/profilePic_chat_cardView"
+            android:text="@string/his_name"
+            android:textStyle="bold"
+            android:textColor="#064420"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/last_message_chat_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_chat_TV"
+            android:layout_marginStart="5dp"
+            android:textColor="#064420"
+            android:alpha="0.5"
+            android:layout_toEndOf="@id/profilePic_chat_cardView"
+            android:maxLines="2"
+            android:text="@string/last_message" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">Recipes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="title_activity_add_post" translatable="false">AddPostActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label" translatable="false">First Fragment</string>
+    <string name="second_fragment_label" translatable="false">Second Fragment</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="previous" translatable="false">Previous</string>
+    <string name="hello_first_fragment" translatable="false">Hello first fragment</string>
+    <string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_main211" translatable="false">MainActivity211</string>
+    <string name="addNewRecipe">Add New Recipe</string>
+    <string name="enterRecipeName">Enter Recipe Name…</string>
+    <string name="enterIngredients">Enter ingredients…</string>
+    <string name="enterInstructions">Enter instructions…</string>
+    <string name="typing">typing…</string>
+    <string name="lastOnline">last seen:</string>
+    <string name="emptyMessageError">Can\'t send empty message.</string>
+    <string name="delete">Delete</string>
+    <string name="deleteConfirmation">Are you sure to delete this message?</string>
+    <string name="cancel">Cancel</string>
+    <string name="read">Read</string>
+    <string name="sent">Sent</string>
+    <string name="messageDeleted">message deleted.</string>
+    <string name="youCannotDeleteOtherUsersMessages">you cannot delete other users messages.</string>
+    <string name="deleteComment">Delete comment</string>
+    <string name="commentDeleteConfirmation">Delete this comment?</string>
+    <string name="no">No</string>
+    <string name="youCantDeleteOtherUserComment">You can\'t delete other user comment…</string>
+    <string name="login">Login</string>
+    <string name="invalidEmail">Invalid Email!</string>
+    <string name="recoverPassword">Recover Password</string>
+    <string name="email">Email</string>
+    <string name="recover">Recover</string>
+    <string name="sendingEmail">Sending email</string>
+    <string name="emailSent">Email sent</string>
+    <string name="failed">Failed</string>
+    <string name="signingIn">Signing in</string>
+    <string name="signInFailed">Sign in Failed</string>
+    <string name="deleteNotification">Delete notification</string>
+    <string name="notificationDeleteConfirmation">Delete this notification?</string>
+    <string name="notificationDeleted">Notification deleted!</string>
+    <string name="profile">Profile</string>
+    <string name="recipeDetail">Recipe detail</string>
+    <string name="deleteRecipe">Delete Recipe</string>
+    <string name="deleting">Deleting…</string>
+    <string name="recipeDeletedSuccessfully">Recipe deleted successfully!</string>
+    <string name="liked">Liked</string>
+    <string name="like">Like</string>
+    <string name="likedYourRecipe">Liked your recipe</string>
+    <string name="addingComment">Adding comment…</string>
+    <string name="typeYourComment">Type your comment…</string>
+    <string name="commentAdded">Comment added!</string>
+    <string name="commentedOnYourRecipe">Commented on your recipe</string>
+    <string name="likes">" Likes"</string>
+    <string name="comments">" Comments"</string>
+    <string name="FCMRegistrationTokenFailed">Fetching FCM registration token failed</string>
+    <string name="home">Home</string>
+    <string name="chat">Chat</string>
+    <string name="notification">Notification</string>
+    <string name="editProfilePicture">Edit profile picture</string>
+    <string name="editCoverPicture">Edit cover picture</string>
+    <string name="editName">Edit name</string>
+    <string name="editSpeciality">Edit speciality</string>
+    <string name="changePassword">Change Password</string>
+    <string name="profileEdit">Profile edit</string>
+    <string name="updatingProfilePicture">Updating profile picture</string>
+    <string name="updatingCoverPicture">Updating cover picture</string>
+    <string name="updatingName">Updating name</string>
+    <string name="updatingSpeciality">Updating speciality</string>
+    <string name="changingPassword">Changing password</string>
+    <string name="passwordCantContainSpaces">Password can\'t contain spaces…</string>
+    <string name="enterYourOldPassword">Enter your old password…</string>
+    <string name="passwordMinLength">Password length must be at least 6 characters…</string>
+    <string name="passwordUpdatedSuccessfully">Password updated successfully!</string>
+    <string name="update">Update</string>
+    <string name="enter">Enter</string>
+    <string name="updated">Updated</string>
+    <string name="pleaseEnter">Please Enter</string>
+    <string name="pickProfilePictureFrom">"Pick profile picture from "</string>
+    <string name="pleaseEnableCameraAndStoragePermissions">Please enable camera and storage permissions</string>
+    <string name="pleaseEnableStoragePermission">Please enable storage permission</string>
+    <string name="pictureUpdated">Picture Updated.</string>
+    <string name="errorUpdating">Error updating.</string>
+    <string name="unknownError">Unknown Error</string>
+    <string name="createAccount">Create Account</string>
+    <string name="cookingUser">Cooking user…</string>
+    <string name="invalidName">Invalid Name!</string>
+    <string name="userCreatedSuccessfully">New user is cooked!</string>
+    <string name="pleaseTryAgain">Please Try Again.</string>
+    <string name="settings">Settings</string>
+    <string name="postNotificationsOff">You will not receive a new post notifications</string>
+    <string name="unSubscriptionFailed">unSubscription failed</string>
+    <string name="postNotificationsOn">You will receive a new post notifications</string>
+    <string name="subscriptionFailed">Subscription failed</string>
+    <string name="recipe_name">Recipe Name</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="instructions">Instructions</string>
+    <string name="upload">Upload</string>
+    <string name="his_name">His name</string>
+    <string name="online">online</string>
+    <string name="type">Type...</string>
+    <string name="don_t_have_an_account_press_here">Don\'t have an account? press here</string>
+    <string name="forget_your_password_press_here">Forget your password? press here</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="_22_comments">22 comments</string>
+    <string name="_27_min">27 min</string>
+    <string name="_331_likes">331 Likes</string>
+    <string name="comment">Comment</string>
+    <string name="name">Name</string>
+    <string name="recipe_ingredients">Recipe ingredients</string>
+    <string name="recipe_instructions">Recipe instructions</string>
+    <string name="write_a_comment">Write a comment…</string>
+    <string name="already_have_an_account_press_here">Already have an account? press here</string>
+    <string name="post_notifications">Post notifications</string>
+    <string name="last_message">last message</string>
+    <string name="other_user_message">other user message</string>
+    <string name="_10_10_2021" translatable="false">10/10/2021</string>
+    <string name="the_comment">the comment…</string>
+    <string name="user_name">user name</string>
+    <string name="time">time</string>
+    <string name="change_password">Change Password</string>
+    <string name="new_password">New password</string>
+    <string name="old_password">Old password</string>
+    <string name="update_password">Update Password</string>
+    <string name="add_post">Add Post</string>
+    <string name="logout">Logout</string>
+    <string name="search">Search</string>
+    <string name="chats">Chats</string>
+    <string name="notifications">Notifications</string>
+    <string name="users">Users</string>
+    <string name="registration">Registration</string>
+    <string name="yourRecipeIsBeingCooked">Your recipe is being cooked...!</string>
+    <string name="yourRecipeIsNowReady">Your recipe is now ready!</string>
+    <string name="addedNewRecipe">added new recipe</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="chooseImageFrom">Choose Image from:</string>
+    <string name="cameraAndStoragePermissionsAreBothNecessary">Camera and Storage permissions are both necessary</string>
+    <string name="storagePermissionsNecessary">Storage permissions necessary!</string>
+    <string name="locationPermissionNecessary">Location permission necessary!</string>
+    <string name="comeEatWithMe">Come eat with me, this is my address:</string>
+    <string name="locationOff">Some actions will not be possible when your location services are turned off</string>
+    <string name="locationOn">Now you can invite evertone to eat with you!</string>
+    <string name="appDescription">The foodies place</string>
+    <string name="speciality">Speciality</string>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:id="@+id/message_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/profilePic_chat_cardView"
+            app:cardCornerRadius="50dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/profile_iv"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_profile_default"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/other_user_message"
+            android:background="#FDFAF6"
+            android:textSize="20sp"
+            android:textColor="#064420"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:linksClickable="true"
+            android:autoLink="all"
+            android:id="@+id/message_tv"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22_9_2021"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/time_tv"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sent"
+        android:textAlignment="textEnd"
+        android:visibility="gone"
+        android:id="@+id/message_status_tv"/>
+
+</LinearLayout>
